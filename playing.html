@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube | Playing</title>
+    <!-- Style -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./css/playing.css">
+</head>
+<body>
+    <nav class="p-3 position-sticky">
+        <div id="nav-bar" class="row justify-content-between align-items-center">
+            <div id="navbar-left" class="col col-md-2 d-flex gap-4">
+                <div class="d-none nav-icon d-lg-block" id="nav-toggler"><i class='bx bx-menu'></i></div>
+                <div id="nav-logo"><i class='bx bxl-youtube'></i></div>
+                
+            </div>
+            <div id="navbar-center" class="col col-md-6 d-flex justify-content-center gap-3 align-items-center" >
+                <div class="input-group d-none d-lg-flex">
+                    <input type="text" id="nav-searchbar" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class='bx bx-search'></i></button>
+                </div>
+                <div id="nav-mic" class="d-none nav-icon d-lg-flex"><i class='bx bx-microphone'></i></div>
+            </div>
+            <div id="navbar-right" class="col col-md-2 d-flex gap-4 justify-content-end">
+                <div id="icon-upload" class="d-none nav-icon d-lg-block"><i class='bx bx-upload'></i></div> 
+                <div id="noti-bell" class="d-none nav-icon d-lg-block"><i class='bx bx-bell'></i></div>
+                <div id="search-mobile" class="d-lg-none nav-icon"><i class='bx bx-search'></i></div>
+                <div id="profile-pic"><i class='bx bx-user'></i></div>
+            </div>
+            <!-- <i class='bx bx-user'></i>
+            <i class='bx bxl-facebook-square'></i> 
+            <box-icon type='solid' name='hot'></box-icon>
+            -->
+            
+        </div>
+    </nav>
+
+    <article>
+
+        <!-- Sidebar -->
+        <aside class="vh-lg-100 py-2" >
+            <ul id="expanded-sidebar" class="hidden d-flex-row justify-content-between gap-3 px-4 list-group">
+                <li class="active">
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-home"></i></div>
+                        <div class="exp-sidebar-link-text">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-film"></i></div>
+                        <div class="exp-sidebar-link-text">Shorts</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-movie"></i></div>
+                        <div class="exp-sidebar-link-text">Subscriptions</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-video"></i></div>
+                        <div class="exp-sidebar-link-text">Library</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-history"></i></div>
+                        <div class="exp-sidebar-link-text">History</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-video-plus"></i></div>
+                        <div class="exp-sidebar-link-text">Your Videos</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-time"></i></div>
+                        <div class="exp-sidebar-link-text">Watch later</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center justify-content-around gap-3">
+                        <div class="expd-icon"><i class="bx bx-like"></i></div>
+                        <div class="exp-sidebar-link-text">Liked Videos</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section  class="playing-main">
+                <div class="screen w-100 vh-70">
+                    Hello
+                </div>
+
+                <div class="playing-split p-3">
+                    <div class="playing-left">
+                        <div class="playing-title-bar left-sub py-2">
+                            <p>Ryan Reynolds and Jessica Biel rescue Wesley Snipes from vampires and the police / Blade: Trinity</p>
+                            <div class="social-details">
+                                <div id="views-date">
+                                    <span>2,232,073 views</span> •
+                                    <span>Jul 3, 2022</span>
+                                </div>
+                                <div id="reactions">
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-details left-sub py-2">
+                            <div class="channel-details d-flex justify-content-between">
+                                <div class="left">
+                                    <h4>Channel Name</h4>
+                                    <div class="channel-fans small">1.83M Subscribers</div>
+                                </div>
+                                <div class="right">
+                                    <button class="btn btn-danger">SUBSCRIBE</button>
+                                </div>
+
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptatum, laudantium, eaque dignissimos aperiam id sequi iusto aliquid, numquam obcaecati quia ullam error sint tempora reprehenderit molestiae rerum! Dignissimos, quam!</p>
+                        </div>
+                        <div class="comment-box left-sub py-2">
+                            <div id="comment-header" class="d-flex justify-content-between align-items-center">
+                                <h6>379 Comments</h6> <button class="btn btn-primary" data-bs-toggle="collapse" href="#comments" role="button" aria-expanded="false" aria-controls="comments">Show/hide</button>
+                            </div>
+                            <div id="comments" class="collapse">
+                                <div class="comment">
+                                    <div class="user">
+                                        <div class="user-picture">N</div>
+                                        <div><strong>Name Blank</strong></div>
+                                    </div>                                    
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit similique tempora aperiam, fugiat distinctio hic culpa provident explicabo soluta aspernatur nesciunt reprehenderit, qui ipsa possimus accusamus unde tenetur, iure sunt!</p>
+                                </div>
+                                <div class="comment">
+                                    <div class="user">
+                                        <div class="user-picture">N</div>
+                                        <div><strong>Name Blank</strong></div>
+                                    </div> 
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit similique tempora aperiam, fugiat distinctio hic culpa provident explicabo soluta aspernatur nesciunt reprehenderit, qui ipsa possimus accusamus unde tenetur, iure sunt!</p>
+                                </div>
+                                <div class="comment">
+                                    <div class="user">
+                                        <div class="user-picture">N</div>
+                                        <div><strong>Name Blank</strong></div>
+                                    </div> 
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit similique tempora aperiam, fugiat distinctio hic culpa provident explicabo soluta aspernatur nesciunt reprehenderit, qui ipsa possimus accusamus unde tenetur, iure sunt!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="playing-right">
+                        <div class="p-right-top">
+                            <div class="tags gap-3 py-3 d-flex justify-content-between overflow-hidden">
+                                <div class="tag active">All</div>
+                                <div class="tag">Scene</div>
+                                <div class="tag">Thriller</div>
+                                <div class="tag">Martial</div>
+                                <div class="tag">Horror</div>
+                                <div class="tag">Javascript</div>
+                            </div>
+                        </div>
+
+                        <div class="playing-right-prevs">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="./images/Extraction-2-poster.jpg" class="img-fluid h-100 dark rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Channel Name</p>
+                                      <p class="card-text"><small class="text-muted">20k Views • 1 year ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="./images/Extraction-2-poster.jpg" class="img-fluid h-100 dark rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Channel Name</p>
+                                      <p class="card-text"><small class="text-muted">20k Views • 1 year ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="./images/Extraction-2-poster.jpg" class="img-fluid h-100 dark rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Channel Name</p>
+                                      <p class="card-text"><small class="text-muted">20k Views • 1 year ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+    </article>
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
